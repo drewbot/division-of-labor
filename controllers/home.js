@@ -1,11 +1,30 @@
 let HomeController = {
   home: function(req, res) {
-    const context = {
-      itemOne: "itemOne",
-      itemTwo: "itemTwo",
-      itemThree: "itemThree"
-    }
-    res.render('home', { context });
+    const context = [
+      {
+        title: "Legacy",
+        artist: "David Bowie"
+      },
+      {
+        title: "Starboy",
+        artist: "Weeknd"
+      },
+      {
+        title: "Humanz",
+        artist: "Gorillaz"
+      }
+    ];
+
+    const cardContext = [
+      {
+        name: "Timmy"
+      },
+      {
+        name: "Jimmy"
+      }
+    ]
+
+    res.render('home', { context, cardContext });
   },
   training: function(req, res) {
     res.render('training');
