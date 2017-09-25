@@ -5,7 +5,7 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const port = process.env.PORT || 8080;
 
-const homeController = require('./controllers/home.js');
+const router = require('./router.js');
 
 const app = express();
 
@@ -32,13 +32,6 @@ app.set('view engine', 'handlebars');
 // setup body-parser middleware
 app.use(bodyParser.urlencoded({ extended: false }));
 
-const router = express.Router();
-
-router.get('/', homeController.home);
-router.get('/training', homeController.training);
-router.get('/recruiting', homeController.recruiting);
-router.get('/software', homeController.software);
-
-app.use('/', router);
+router(app);
 
 app.listen(port);
