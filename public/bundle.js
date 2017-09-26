@@ -34,7 +34,7 @@
 /******/ 	__webpack_require__.c = installedModules;
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
+/******/ 	__webpack_require__.p = "/public/";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(0);
@@ -48,7 +48,7 @@
 	
 	(function () {
 	  var currentPath = window.location.pathname.replace(/^\/([^\/]*).*$/, '$1');
-	  console.log(currentPath);
+	  console.log(currentPath || 'home');
 	
 	  var $navLinks = document.getElementsByClassName('nav-link');
 	  var $activeLink = document.getElementById(currentPath + 'NavLink');

@@ -1,6 +1,6 @@
 (() => {
   const currentPath = window.location.pathname.replace(/^\/([^\/]*).*$/, '$1');
-  console.log(currentPath);
+  console.log(currentPath || 'home');
 
   let $navLinks = document.getElementsByClassName('nav-link');
   let $activeLink = document.getElementById(currentPath + 'NavLink');

@@ -9,8 +9,9 @@ module.exports = {
   entry: './public/main.js',
 
   output: {
-    path: __dirname,
-    filename: './public/bundle.js'
+    path: path.join(__dirname, 'public'),
+    publicPath: '/public/',
+    filename: 'bundle.js'
   },
 
   module: {

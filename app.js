@@ -17,6 +17,7 @@ app.use(sassMiddleware({
     error: (e) => {
       console.console.log('node-sass error', e);
     },
+    force: true,
     debug: true,
     indentedSyntax : false,
     prefix: '/css/stylesheets',
