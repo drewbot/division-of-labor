@@ -1,6 +1,9 @@
 $font-stack: "Lucida Grande", Helvetica, Arial, sans-serif;
 
-$primary-color: #bada55;
+$black: #101820;
+$goldenrod: #C99700;
+$grey: #C1C6C8;
+$white: #ffffff;
 
 body {
   padding: 50px;
@@ -9,5 +12,5 @@ body {
 }
 
 .active {
-  background-color: $primary-color;
+  background-color: $black;
 }
