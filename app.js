@@ -15,7 +15,7 @@ app.use(sassMiddleware({
     src: publicPath + '/sass/stylesheets',
     dest: publicPath + '/css/stylesheets',
     error: (e) => {
-      console.console.log('node-sass error', e);
+      console.log('node-sass error', e);
     },
     force: true,
     debug: true,

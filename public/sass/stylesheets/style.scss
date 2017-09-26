@@ -2,14 +2,12 @@
 @import 'typography';
 @import 'elements';
 
-
 $font-stack: $metroReg, helvetica, sans-serif;
 
 @import 'staging';
 @import 'typography';
 @import 'colors';
 @import 'elements';
-
 
 body {
     font: 10px $font-stack;
