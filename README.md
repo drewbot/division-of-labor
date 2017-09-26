@@ -1,5 +1,7 @@
 # Division of Labor Website
 
+### Installation and setup
+
 Clone, install, and run the app:
 
 ```
@@ -10,3 +12,15 @@ npm start
 ```
 
 Navigate to `http://localhost:8080/`
+
+### Development
+
+Watch and bundle public JS changes
+
+```
+npm run watch
+```
+
+`npm start` will run `nodemon app.js` and update the server with every change including public JS changes.
+
+Sass changes will automatically be preprocessed. The browser must be refreshed manually.
