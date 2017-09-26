@@ -7,3 +7,7 @@ body {
   font: 14px $font-stack;
   color: $primary-color;
 }
+
+.active {
+  background-color: $primary-color;
+}

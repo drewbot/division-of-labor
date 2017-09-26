@@ -1,38 +1,19 @@
-let HomeController = {
-  home: function(req, res) {
-    const context = [
-      {
-        title: "Legacy",
-        artist: "David Bowie"
-      },
-      {
-        title: "Starboy",
-        artist: "Weeknd"
-      },
-      {
-        title: "Humanz",
-        artist: "Gorillaz"
-      }
-    ];
+const homeContent = require('../content/home.js');
 
-    const cardContext = [
-      {
-        name: "Timmy"
-      },
-      {
-        name: "Jimmy"
-      }
-    ]
-
-    res.render('home', { context, cardContext });
+const HomeController = {
+  home(req, res) {
+    res.render('home', {
+      albumContext: homeContent.albumContext,
+      cardContext: homeContent.cardContext
+    });
   },
-  training: function(req, res) {
+  training(req, res) {
     res.render('training');
   },
-  recruiting: function(req, res) {
+  recruiting(req, res) {
     res.render('recruiting');
   },
-  software: function(req, res) {
+  software(req, res) {
     res.render('software');
   }
 };
