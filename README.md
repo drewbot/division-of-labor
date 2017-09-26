@@ -1,6 +1,6 @@
 # Division of Labor Website
 
-Clone and install
+Clone, install, and run the app:
 
 ```
 git clone git@github.com:drewbot/division-of-labor.git
