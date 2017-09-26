@@ -25,6 +25,6 @@ Watch and bundle public JS changes
 npm run watch
 ```
 
-`npm start` will run `nodemon app.js` and update the server with every change including public JS changes.
+`npm start-dev` will run `nodemon app.js` and update the server with every change including public JS changes.
 
 Sass changes will automatically be preprocessed. The browser must be refreshed manually.
