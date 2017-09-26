@@ -1,3 +1,6 @@
+@import 'staging';
+
+
 $font-stack: "Lucida Grande", Helvetica, Arial, sans-serif;
 
 $black: #101820;
@@ -13,4 +16,12 @@ body {
 
 .active {
   background-color: $goldenrod;
+}
+
+nav {
+  li {
+    a {
+      display: block;
+    }
+  }
 }

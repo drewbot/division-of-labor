@@ -2,7 +2,11 @@
 
 ### Installation and setup
 
-Clone, install, and run the app:
+#### Prerequisites
+
+Make sure you have Node.js, NPM and Nodemon installed.
+
+#### Clone, Install, and Run
 
 ```
 git clone git@github.com:drewbot/division-of-labor.git
