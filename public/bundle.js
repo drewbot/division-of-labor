@@ -47,6 +47,8 @@
 	'use strict';
 	
 	(function () {
+	
+	  // Nav Link Active Class
 	  var currentPath = window.location.pathname.replace(/^\/([^\/]*).*$/, '$1') || 'home';
 	  console.log(currentPath);
 	
@@ -64,6 +66,8 @@
 	  });
 	
 	  $activeLink.className += ' active';
+	
+	  //
 	})();
 
 /***/ })

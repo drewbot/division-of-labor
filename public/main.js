@@ -1,4 +1,6 @@
 (() => {
+
+  // Nav Link Active Class
   const currentPath = window.location.pathname.replace(/^\/([^\/]*).*$/, '$1') || 'home';
   console.log(currentPath);
 
@@ -16,5 +18,8 @@
   });
 
   $activeLink.className += ' active';
+
+  //
+  
 
 })();

@@ -1,17 +1,19 @@
 @import 'staging';
+@import 'typography';
+@import 'elements';
 
 
-$font-stack: "Lucida Grande", Helvetica, Arial, sans-serif;
+$font-stack: $metroReg, helvetica, sans-serif;
 
-$black: #101820;
-$goldenrod: #C99700;
-$grey: #C1C6C8;
-$white: #ffffff;
+@import 'staging';
+@import 'typography';
+@import 'colors';
+@import 'elements';
+
 
 body {
-  padding: 50px;
-  font: 14px $font-stack;
-  color: $black;
+    font: 10px $font-stack;
+    color: $black;
 }
 
 .active {
