@@ -12,7 +12,6 @@ const app = express();
 const publicPath = path.join(__dirname, 'public');
 
 app.use(sassMiddleware({
-    /* Options */
     src: publicPath + '/sass/stylesheets',
     dest: publicPath + '/css/stylesheets',
     error: (e) => {
