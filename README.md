@@ -19,11 +19,15 @@ Navigate to `http://localhost:8080/`
 
 ### Development
 
+#### Public JS
+
 Watch and bundle public JS changes
 
 ```
 npm run watch
 ```
+
+#### Server JS and Sass
 
 `npm start` will run `nodemon app.js` and update the server with every change including public JS changes.
 
