@@ -1,0 +1,32 @@
+body {
+    -webkit-font-smoothing: antialiased;
+    font: 10px $metro-reg-stack;
+    color: $black;
+}
+
+h1 {
+    font: 2.4rem $metro-semi-bold-stack;
+    color: $black;
+}
+
+h2 {
+    font: 1.8rem $metro-bold-stack;
+    text-transform: uppercase;;
+    color: $goldenrod;
+}
+
+p, li, a, span, button, input, textarea, figcaption {
+  font-size: 1.4rem;
+}
+
+span {
+  color: $grey;
+}
+
+nav {
+  li {
+    a {
+      display: block;
+    }
+  }
+}

@@ -1,27 +1,8 @@
 @import 'staging';
 @import 'typography';
-@import 'elements';
-
-$font-stack: $metroReg, helvetica, sans-serif;
-
-@import 'staging';
-@import 'typography';
 @import 'colors';
 @import 'elements';
 
-body {
-    font: 10px $font-stack;
-    color: $black;
-}
-
 .active {
   background-color: $goldenrod;
-}
-
-nav {
-  li {
-    a {
-      display: block;
-    }
-  }
 }

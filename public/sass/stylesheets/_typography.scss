@@ -1,7 +1,23 @@
-$metro: "metropolis";
-$metroReg: "metropolis-regular";
+
+$metro-reg: "metropolis-regular";
+$metro-semi-bold: "metropolis-semi-bold";
+$metro-bold: "metropolis-bold";
 
 @font-face {
-    font-family: $metroReg;
-    src: url(./public/assets/fonts/metropolis/Metropolis-Regular.otf);
+    font-family: $metro-reg;
+    src: url(../../assets/fonts/metropolis/Metropolis-Regular.otf);
 }
+
+@font-face {
+    font-family: $metro-semi-bold;
+    src: url(../../assets/fonts/metropolis/Metropolis-SemiBold.otf);
+}
+
+@font-face {
+    font-family: $metro-bold;
+    src: url(../../assets/fonts/metropolis/Metropolis-Bold.otf);
+}
+
+$metro-reg-stack: $metro-reg, helvetica, sans-serif;
+$metro-semi-bold-stack: $metro-semi-bold, helvetica, sans-serif;
+$metro-bold-stack: $metro-bold, helvetica, sans-serif;
