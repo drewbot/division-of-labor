@@ -27,4 +27,4 @@ npm run watch
 
 `npm start` will run `nodemon app.js` and update the server with every change including public JS changes.
 
-Sass changes will automatically be preprocessed. The browser must be refreshed manually.
+Sass changes will automatically be preprocessed by `npm start`. The browser must be refreshed manually.
