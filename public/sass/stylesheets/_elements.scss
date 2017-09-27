@@ -5,14 +5,26 @@ body {
 }
 
 h1 {
-  font: 2.4rem $metro-semi-bold-stack;
+  font: 3.6rem $metro-black-stack;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
 }
 
 h2 {
-  font: 1.8rem $metro-bold-stack;
-  text-transform: uppercase;;
+  font: 1.8rem $metro-reg-stack;
+  text-transform: uppercase;
   color: $goldenrod;
 }
+
+// h1 {
+//   font: 2.4rem $metro-semi-bold-stack;
+// }
+//
+// h2 {
+//   font: 1.8rem $metro-bold-stack;
+//   text-transform: uppercase;;
+//   color: $goldenrod;
+// }
 
 h3 {
   font: 1.6rem $metro-semi-bold-stack;
@@ -30,4 +42,11 @@ a {
 
 span {
   color: $grey;
+}
+
+
+nav {
+  ul {
+    text-align: right;
+  }
 }

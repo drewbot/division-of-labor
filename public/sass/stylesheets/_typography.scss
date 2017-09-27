@@ -2,6 +2,7 @@
 $metro-reg: "metropolis-regular";
 $metro-semi-bold: "metropolis-semi-bold";
 $metro-bold: "metropolis-bold";
+$metro-black: "metropolis-black";
 
 @font-face {
     font-family: $metro-reg;
@@ -18,6 +19,12 @@ $metro-bold: "metropolis-bold";
     src: url(../../assets/fonts/metropolis/Metropolis-Bold.otf);
 }
 
+@font-face {
+    font-family: $metro-black;
+    src: url(../../assets/fonts/metropolis/Metropolis-Black.otf);
+}
+
 $metro-reg-stack: $metro-reg, helvetica, sans-serif;
 $metro-semi-bold-stack: $metro-semi-bold, helvetica, sans-serif;
 $metro-bold-stack: $metro-bold, helvetica, sans-serif;
+$metro-black-stack: $metro-black, helvetica, sans-serif;
