@@ -3,6 +3,15 @@
 @import 'colors';
 @import 'elements';
 
+.nav-link {
+  padding: .4rem;
+  a {
+    padding: .2rem 0;
+  }
+}
+
 .active {
-  background-color: $goldenrod;
+  a {
+    background-color: $goldenrod;
+  }
 }

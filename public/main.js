@@ -13,13 +13,13 @@
       [].forEach.call($navLinks, ($elem) => {
         $elem.classList.remove('active');
       });
-      e.currentTarget.className += ' active'
+      e.currentTarget.className += ' active';
     });
   });
 
   $activeLink.className += ' active';
 
   //
-  
+
 
 })();
