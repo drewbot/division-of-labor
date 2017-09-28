@@ -1,16 +1,16 @@
 <nav>
   <ul>
-    <li class="nav-link" id="homeNavLink"><a href="/">Home</a></li>
-    <li class="nav-link" id="trainingNavLink"><a href="/training">Training</a></li>
-    <li class="nav-link" id="recruitingNavLink"><a href="/recruiting">Recruiting</a></li>
-    <li class="nav-link" id="softwareNavLink"><a href="/software">Software</a></li>
+    <li class="nav-link"><a href="#about">About</a></li>
+    <li class="nav-link"><a href="#services">Services</a></li>
+    <li class="nav-link"><a href="#team">Team</a></li>
+    <li class="nav-link"><a href="#clients">Clients</a></li>
+    <li class="nav-link"><a href="#contact">Contact</a></li>
   </ul>
 </nav>
-<div class="row">
+
+<section id="about">
   <h1>Primary Headline</h1>
   <h2>Secondary Headline</h2>
-</div>
-<div class="row">
   <ul>
     {{#each albumContext}}
     <li>
@@ -19,21 +19,28 @@
     </li>
     {{/each}}
   </ul>
-</div>
-<div class="row">
-  {{#each cardContext}}
-    {{> card this}}
-  {{/each}}
-</div>
-<div class="row">
-  <p>
-    Leverage agile <span>frameworks</span> to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
-  </p>
-</div>
+</section>
+
 <section id="services">
   <ul>
     <li><a href="/training">Training</a></li>
     <li><a href="/recruiting">Recruiting</a></li>
     <li><a href="/software">Software</a></li>
   </ul>
+</section>
+
+<section class="row" id="team">
+  {{#each cardContext}}
+    {{> card this}}
+  {{/each}}
+</section>
+
+<section id="clients">
+  <p>
+    Leverage agile <span>frameworks</span> to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+  </p>
+</section>
+
+<section id="contact">
+
 </section>

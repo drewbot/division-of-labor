@@ -1,8 +1,7 @@
-import {activeNav} from './scripts/active-nav.js';
+import {scrollNav} from './scripts/scroll-nav.js';
 
-(() = {
+(() => {
 
-  // document.querySelector('.hello').scrollIntoView({
-  //   behavior: 'smooth'
-  // });
+  scrollNav();
+
 })();

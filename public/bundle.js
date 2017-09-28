@@ -46,55 +46,75 @@
 
 	'use strict';
 	
-	var _scriptsActiveNavJs = __webpack_require__(1);
+	var _scriptsScrollNavJs = __webpack_require__(1);
 	
-	// Nav Link Active Class
-	console.log('activeNav ', _scriptsActiveNavJs.activeNav);
-	console.log('type ', typeof _scriptsActiveNavJs.activeNav);
-	(0, _scriptsActiveNavJs.activeNav)();
+	(function () {
 	
-	// document.querySelector('.hello').scrollIntoView({
-	//   behavior: 'smooth'
-	// });
+	  (0, _scriptsScrollNavJs.scrollNav)();
+	})();
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
 	Object.defineProperty(exports, '__esModule', {
 	  value: true
 	});
-	var activeNav = function activeNav() {
-	  var currentPath = window.location.pathname.replace(/^\/([^\/]*).*$/, '$1') || 'home';
-	  console.log(currentPath);
+	
+	var _scrollAnimateJs = __webpack_require__(2);
+	
+	var scrollNav = function scrollNav() {
 	
 	  var $navLinks = document.getElementsByClassName('nav-link');
-	  var $activeLink = document.getElementById(currentPath + 'NavLink');
 	
 	  [].forEach.call($navLinks, function ($elem) {
-	    $elem.classList.remove('active');
 	    $elem.addEventListener('click', function (e) {
-	      [].forEach.call($navLinks, function ($elem) {
-	        $elem.classList.remove('active');
-	      });
-	      e.currentTarget.className += ' active';
+	      var $anchor = e.currentTarget.querySelector('a');
+	      var anchorHref = $anchor.getAttribute('href');
+	      var toSectionId = anchorHref.slice(1, anchorHref.length);
+	      var $toSection = document.getElementById(toSectionId);
+	      e.preventDefault();
+	      console.log($toSection);
+	      (0, _scrollAnimateJs.scrollAnimate)($toSection.offsetTop, 500);
 	    });
 	  });
-	
-	  $activeLink.className += ' active';
 	};
+	exports.scrollNav = scrollNav;
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports) {
+
+	"use strict";
 	
-	exports.activeNav = activeNav;
-	// <nav>
-	//   <ul>
-	//     <li class="nav-link" id="homeNavLink"><a href="/">Home</a></li>
-	//     <li class="nav-link" id="trainingNavLink"><a href="/training">Training</a></li>
-	//     <li class="nav-link" id="recruitingNavLink"><a href="/recruiting">Recruiting</a></li>
-	//     <li class="nav-link" id="softwareNavLink"><a href="/software">Software</a></li>
-	//   </ul>
-	// </nav>
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	var scrollAnimate = function scrollAnimate(elementY, duration) {
+	  console.log(elementY);
+	  var startingY = window.pageYOffset;
+	  var diff = elementY - startingY;
+	  var start;
+	
+	  // Bootstrap our animation - it will get called right before next frame shall be rendered.
+	  window.requestAnimationFrame(function step(timestamp) {
+	    if (!start) start = timestamp;
+	    // Elapsed miliseconds since start of scrolling.
+	    var time = timestamp - start;
+	    // Get percent of completion in range [0, 1].
+	    var percent = Math.min(time / duration, 1);
+	
+	    window.scrollTo(0, startingY + diff * percent);
+	
+	    // Proceed with animation as long as we wanted it to.
+	    if (time < duration) {
+	      window.requestAnimationFrame(step);
+	    }
+	  });
+	};
+	exports.scrollAnimate = scrollAnimate;
 
 /***/ })
 /******/ ]);
