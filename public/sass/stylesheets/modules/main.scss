@@ -14,3 +14,24 @@
     background-color: $goldenrod;
   }
 }
+
+.content-well {
+  & > p, ul {
+    @media #{$breakpoint-md-up} {
+      padding: 0 0 0 6rem;
+    }
+  }
+}
+
+.card {
+  padding: 0 0 1rem 0;
+  @media #{$breakpoint-md-up} {
+    padding: 0 2rem;
+  }
+  &:last-of-type {
+    padding: 0 0 0 0;
+    @media #{$breakpoint-md-up} {
+      padding: 0 2rem;
+    }
+  }
+}
