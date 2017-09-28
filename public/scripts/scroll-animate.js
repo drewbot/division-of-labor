@@ -1,5 +1,4 @@
 export const scrollAnimate = function (elementY, duration) {
-  console.log(elementY);
   var startingY = window.pageYOffset
   var diff = elementY - startingY
   var start

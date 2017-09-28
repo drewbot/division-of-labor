@@ -71,12 +71,10 @@
 	
 	  [].forEach.call($navLinks, function ($elem) {
 	    $elem.addEventListener('click', function (e) {
-	      var $anchor = e.currentTarget.querySelector('a');
-	      var anchorHref = $anchor.getAttribute('href');
+	      var anchorHref = e.currentTarget.querySelector('a').getAttribute('href');
 	      var toSectionId = anchorHref.slice(1, anchorHref.length);
 	      var $toSection = document.getElementById(toSectionId);
 	      e.preventDefault();
-	      console.log($toSection);
 	      (0, _scrollAnimateJs.scrollAnimate)($toSection.offsetTop, 500);
 	    });
 	  });
@@ -93,7 +91,6 @@
 	  value: true
 	});
 	var scrollAnimate = function scrollAnimate(elementY, duration) {
-	  console.log(elementY);
 	  var startingY = window.pageYOffset;
 	  var diff = elementY - startingY;
 	  var start;
