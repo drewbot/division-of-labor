@@ -48,9 +48,12 @@
 	
 	var _scriptsScrollNavJs = __webpack_require__(1);
 	
+	var _scriptsShowNavJs = __webpack_require__(3);
+	
 	(function () {
 	
 	  (0, _scriptsScrollNavJs.scrollNav)();
+	  (0, _scriptsShowNavJs.showNav)();
 	})();
 
 /***/ }),
@@ -112,6 +115,29 @@
 	  });
 	};
 	exports.scrollAnimate = scrollAnimate;
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+	var showNav = function showNav() {
+	
+	  var $menuIcon = document.getElementById('menuIcon');
+	  var $navList = document.getElementById('navList');
+	  $menuIcon.addEventListener('click', function (e) {
+	    if ($navList.className === 'show') {
+	      $navList.classList.remove('show');
+	    } else {
+	      $navList.className += "show";
+	    }
+	  });
+	};
+	exports.showNav = showNav;
 
 /***/ })
 /******/ ]);

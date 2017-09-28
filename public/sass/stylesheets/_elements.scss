@@ -52,7 +52,23 @@ span {
 
 
 nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  #menuIcon {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
   ul {
+    position: absolute;
+    top: 60px;
+    right: -120px;
     text-align: right;
+    transition-property: right;
+    transition-duration: 300ms;
+    &.show {
+      right: 0px;
+    }
   }
 }

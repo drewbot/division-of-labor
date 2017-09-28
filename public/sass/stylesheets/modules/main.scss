@@ -2,3 +2,19 @@
   width: 100%;
   max-width: 10rem;
 }
+
+.nav-link {
+  background-color: $white;
+  a {
+    padding: .2rem .4rem;
+    &:hover {
+      border-bottom: 2px solid $black;
+    }
+  }
+}
+
+.active {
+  a {
+    background-color: $goldenrod;
+  }
+}

@@ -4,15 +4,3 @@
 @import "sass-flexbox-grid/main.scss";
 @import 'elements';
 @import "modules/main.scss";
-
-.nav-link {
-  a {
-    padding: .2rem .4rem;
-  }
-}
-
-.active {
-  a {
-    background-color: $goldenrod;
-  }
-}
