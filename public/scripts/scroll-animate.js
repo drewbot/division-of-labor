@@ -3,7 +3,7 @@ export const scrollAnimate = function (elementY, duration) {
   var diff = elementY - startingY
   var start
 
-  // Bootstrap our animation - it will get called right before next frame shall be rendered.
+  // Define the animation - it will get called right before next frame is rendered.
   window.requestAnimationFrame(function step(timestamp) {
     if (!start) start = timestamp
     // Elapsed miliseconds since start of scrolling.
