@@ -1,0 +1,12 @@
+<section id="about">
+  <h1>Primary Headline</h1>
+  <h2>Secondary Headline</h2>
+  <ul>
+    {{#each albumContext}}
+    <li>
+      <p>Title: {{this.title}}</p>
+      <p>Artist: {{this.artist}}</p>
+    </li>
+    {{/each}}
+  </ul>
+</section>

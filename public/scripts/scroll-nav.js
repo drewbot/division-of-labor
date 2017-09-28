@@ -2,7 +2,7 @@ import {scrollAnimate} from './scroll-animate.js';
 
 export const scrollNav = function() {
 
-  let $navLinks = document.getElementsByClassName('nav-link');
+  let $navLinks = document.querySelector('nav').getElementsByTagName('li');
 
   [].forEach.call($navLinks, ($elem) => {
     $elem.addEventListener('click', (e) => {

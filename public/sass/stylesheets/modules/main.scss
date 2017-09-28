@@ -1,15 +1,11 @@
 .logo {
   width: 100%;
-  max-width: 10rem;
-}
-
-.nav-link {
-  background-color: $white;
-  a {
-    padding: .2rem .4rem;
-    &:hover {
-      border-bottom: 2px solid $black;
-    }
+  max-width: 7rem;
+  @media #{$breakpoint-sm-up} {
+    max-width: 10rem;
+  }
+  @media #{$breakpoint-lg-up} {
+    max-width: 14rem;
   }
 }
 

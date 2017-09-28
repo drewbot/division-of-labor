@@ -70,7 +70,7 @@
 	
 	var scrollNav = function scrollNav() {
 	
-	  var $navLinks = document.getElementsByClassName('nav-link');
+	  var $navLinks = document.querySelector('nav').getElementsByTagName('li');
 	
 	  [].forEach.call($navLinks, function ($elem) {
 	    $elem.addEventListener('click', function (e) {

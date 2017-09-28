@@ -1,63 +1,11 @@
-<header>
-  <div>
-    <img src="/assets/images/logo-500px.png" alt="Division of Labor logo" class="logo">
-  </div>
-  <nav>
-    <div id="menuIcon">
-      <?xml version="1.0" encoding="iso-8859-1"?>
-      <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 56 56" style="enable-background:new 0 0 56 56;" xml:space="preserve" width="56px" height="56px">
-      <g>
-      	<path d="M28,0C12.561,0,0,12.561,0,28s12.561,28,28,28s28-12.561,28-28S43.439,0,28,0z M28,54C13.663,54,2,42.336,2,28   S13.663,2,28,2s26,11.664,26,26S42.337,54,28,54z" fill="#c99700"/>
-      	<path d="M40,16H16c-0.553,0-1,0.448-1,1s0.447,1,1,1h24c0.553,0,1-0.448,1-1S40.553,16,40,16z" fill="#c99700"/>
-      	<path d="M40,27H16c-0.553,0-1,0.448-1,1s0.447,1,1,1h24c0.553,0,1-0.448,1-1S40.553,27,40,27z" fill="#c99700"/>
-      	<path d="M40,38H16c-0.553,0-1,0.448-1,1s0.447,1,1,1h24c0.553,0,1-0.448,1-1S40.553,38,40,38z" fill="#c99700"/>
-      </g>
-      </svg>
-    </div>
-    <ul id="navList">
-      <li class="nav-link"><a href="#about">About</a></li>
-      <li class="nav-link"><a href="#services">Services</a></li>
-      <li class="nav-link"><a href="#team">Team</a></li>
-      <li class="nav-link"><a href="#clients">Clients</a></li>
-      <li class="nav-link"><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+{{> header}}
 
-<section id="about">
-  <h1>Primary Headline</h1>
-  <h2>Secondary Headline</h2>
-  <ul>
-    {{#each albumContext}}
-    <li>
-      <p>Title: {{this.title}}</p>
-      <p>Artist: {{this.artist}}</p>
-    </li>
-    {{/each}}
-  </ul>
-</section>
+{{> about}}
 
-<section id="services">
-  <ul>
-    <li><a href="/training">Training</a></li>
-    <li><a href="/recruiting">Recruiting</a></li>
-    <li><a href="/software">Software</a></li>
-  </ul>
-</section>
+{{> services}}
 
-<section class="row" id="team">
-  {{#each cardContext}}
-    {{> card this}}
-  {{/each}}
-</section>
+{{> team}}
 
-<section id="clients">
-  <p>
-    Leverage agile <span>frameworks</span> to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
-  </p>
-</section>
+{{> clients}}
 
-<section id="contact">
-
-</section>
+{{> contact}}
