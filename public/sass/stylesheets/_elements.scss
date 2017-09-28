@@ -17,13 +17,18 @@ body {
 // }
 
 h1 {
-  font: 2.4rem $metro-semi-bold-stack;
+  font: 3.2rem $metro-semi-bold-stack;
+  letter-spacing: 0.2rem;
+  line-height: 5.8rem;
 }
 
 h2 {
+  margin: 0 0 1.2rem 0;
   font: 1.8rem $metro-bold-stack;
-  text-transform: uppercase;;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
   color: $goldenrod;
+  line-height: 2.8rem;
 }
 
 h3 {
@@ -32,6 +37,7 @@ h3 {
 
 p, li, a, span, button, input, textarea, figcaption {
   font-size: 1.4rem;
+  line-height: 2.3rem;
 }
 
 a {

@@ -42,13 +42,31 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var _scriptsActiveNavJs = __webpack_require__(1);
+	
+	// Nav Link Active Class
+	console.log('activeNav ', _scriptsActiveNavJs.activeNav);
+	console.log('type ', typeof _scriptsActiveNavJs.activeNav);
+	(0, _scriptsActiveNavJs.activeNav)();
+	
+	// document.querySelector('.hello').scrollIntoView({
+	//   behavior: 'smooth'
+	// });
+
+/***/ }),
+/* 1 */
 /***/ (function(module, exports) {
 
 	'use strict';
 	
-	(function () {
-	
-	  // Nav Link Active Class
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+	var activeNav = function activeNav() {
 	  var currentPath = window.location.pathname.replace(/^\/([^\/]*).*$/, '$1') || 'home';
 	  console.log(currentPath);
 	
@@ -66,9 +84,17 @@
 	  });
 	
 	  $activeLink.className += ' active';
+	};
 	
-	  //
-	})();
+	exports.activeNav = activeNav;
+	// <nav>
+	//   <ul>
+	//     <li class="nav-link" id="homeNavLink"><a href="/">Home</a></li>
+	//     <li class="nav-link" id="trainingNavLink"><a href="/training">Training</a></li>
+	//     <li class="nav-link" id="recruitingNavLink"><a href="/recruiting">Recruiting</a></li>
+	//     <li class="nav-link" id="softwareNavLink"><a href="/software">Software</a></li>
+	//   </ul>
+	// </nav>
 
 /***/ })
 /******/ ]);
