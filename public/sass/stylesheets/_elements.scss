@@ -59,8 +59,11 @@ nav {
     position: absolute;
     top: 0;
     right: 0;
-    :hover path { 
-      fill: #111;
+    :hover {
+      cursor: pointer;
+      path {
+        fill: #111;
+      }
     }
   }
   ul {
