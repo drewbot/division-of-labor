@@ -9,6 +9,40 @@
   }
 }
 
+#menuIcon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  path {
+    transition-property: fill;
+    transition-duration: 250ms;
+  }
+  :hover {
+    cursor: pointer;
+    path {
+      fill: #111;
+    }
+  }
+}
+
+#navList {
+  position: absolute;
+  top: 60px;
+  right: -120px;
+  text-align: right;
+  transition-property: right;
+  transition-duration: 300ms;
+  &.show {
+    right: 18px;
+  }
+  li {
+    a {
+      padding: .2rem .4rem;
+      background-color: $white;
+    }
+  }
+}
+
 .active {
   a {
     background-color: $goldenrod;
