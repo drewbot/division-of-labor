@@ -13,7 +13,7 @@ export const scrollAnimate = function (elementY, duration) {
 
     window.scrollTo(0, startingY + diff * percent)
 
-    // Proceed with animation as long as we wanted it to.
+    // Proceed with animation 
     if (time < duration) {
       window.requestAnimationFrame(step)
     }

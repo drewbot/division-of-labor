@@ -5,45 +5,49 @@ body {
 }
 
 h1 {
+  margin: 0 0 0.6rem 0;
   font: 1.8rem $metro-semi-bold-stack;
   letter-spacing: 0.1rem;
-  line-height: 3rem;
+  line-height: 2.4rem;
   @media #{$breakpoint-sm-up} {
+    margin: 0 0 0.8rem 0;
     font: 3rem $metro-semi-bold-stack;
     letter-spacing: 0.2rem;
-    line-height: 5.8rem;
+    line-height: 4.2rem;
   }
   @media #{$breakpoint-md-up} {
+    margin: 0 0 1rem 0;
     font: 3.6rem $metro-semi-bold-stack;
-    line-height: 6.2rem;
+    line-height: 5rem;
   }
   @media #{$breakpoint-lg-up} {
+    margin: 0 0 1.2rem 0;
     font: 4rem $metro-semi-bold-stack;
-    line-height: 6.6rem;
+    line-height: 5.6rem;
   }
 }
 
 h2 {
-  margin: 0 0 1rem 0;
+  margin: 0 0 0.8rem 0;
   text-transform: uppercase;
   font: 1.2rem $metro-bold-stack;
   letter-spacing: 0.1rem;
   line-height: 2rem;
   color: $goldenrod;
   @media #{$breakpoint-sm-up} {
-    margin: 0 0 1.4rem 0;
+    margin: 0 0 1rem 0;
     font: 1.8rem $metro-bold-stack;
     letter-spacing: 0.2rem;
     line-height: 2.8rem;
   }
   @media #{$breakpoint-md-up} {
-    margin: 0 0 1.8rem 0;
+    margin: 0 0 1.2rem 0;
     font: 2.2rem $metro-bold-stack;
     letter-spacing: 0.22rem;
     line-height: 3.4rem;
   }
   @media #{$breakpoint-lg-up} {
-    margin: 0 0 2rem 0;
+    margin: 0 0 1.4rem 0;
     font: 2.4rem $metro-bold-stack;
     line-height: 3.6rem;
   }
@@ -51,10 +55,10 @@ h2 {
 
 h3 {
   font: 1.2rem $metro-semi-bold-stack;
-  line-height: 1.8rem;
+  line-height: 2rem;
   @media #{$breakpoint-sm-up} {
     font: 1.4rem $metro-semi-bold-stack;
-    line-height: 2.2rem;
+    line-height: 2.4rem;
   }
   @media #{$breakpoint-md-up} {
     font: 1.8rem $metro-semi-bold-stack;

@@ -51,8 +51,21 @@
 
 .content-well {
   & > p, ul {
+    padding: 0 0 2rem 0;
+    @media #{$breakpoint-sm-up} {
+      padding: 0 0 3rem 4rem;
+    }
     @media #{$breakpoint-md-up} {
-      padding: 0 0 0 6rem;
+      padding: 0 0 4rem 6rem;
+    }
+    &:last-of-type {
+      padding: 0;
+      @media #{$breakpoint-sm-up} {
+        padding: 0 0 0 4rem;
+      }
+      @media #{$breakpoint-md-up} {
+        padding: 0 0 0 6rem;
+      }
     }
   }
 }
