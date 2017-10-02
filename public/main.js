@@ -3,7 +3,11 @@ import {showNav} from './scripts/show-nav.js';
 
 (() => {
 
-  scrollNav();
-  showNav();
+  const currentPath = window.location.pathname.replace(/^\/([^\/]*).*$/, '$1') || 'home';
+
+  if (currentPath === 'home') {
+    scrollNav();
+    showNav();
+  }
 
 })();

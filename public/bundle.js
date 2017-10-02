@@ -52,8 +52,12 @@
 	
 	(function () {
 	
-	  (0, _scriptsScrollNavJs.scrollNav)();
-	  (0, _scriptsShowNavJs.showNav)();
+	  var currentPath = window.location.pathname.replace(/^\/([^\/]*).*$/, '$1') || 'home';
+	
+	  if (currentPath === 'home') {
+	    (0, _scriptsScrollNavJs.scrollNav)();
+	    (0, _scriptsShowNavJs.showNav)();
+	  }
 	})();
 
 /***/ }),
