@@ -9,19 +9,16 @@ const HomeController = {
     });
   },
   training(req, res) {
-    res.render('training', {
-      navDetail: true
-    });
+    res.render('training');
   },
   recruiting(req, res) {
-    res.render('recruiting', {
-      navDetail: true
-    });
+    res.render('recruiting');
   },
   software(req, res) {
-    res.render('software', {
-      navDetail: true
-    });
+    res.render('software');
+  },
+  contact(req, res) {
+    res.render('contact');
   }
 };
 

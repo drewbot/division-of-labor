@@ -70,7 +70,7 @@ h3 {
   }
 }
 
-p, li, a, span, button, input, textarea, figcaption {
+p, li, a, span, button, input, textarea, figcaption, div, section {
   font-size: 1rem;
   line-height: 1.8rem;
   @media #{$breakpoint-sm-up} {

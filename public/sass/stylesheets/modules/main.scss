@@ -40,12 +40,11 @@
       padding: .2rem .4rem;
       background-color: $white;
     }
-  }
-}
-
-.active {
-  a {
-    background-color: $goldenrod;
+    &.active {
+      a {
+        
+      }
+    }
   }
 }
 

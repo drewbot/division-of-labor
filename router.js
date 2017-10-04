@@ -8,6 +8,7 @@ module.exports = function(app) {
   homeRouter.get('/training', homeController.training);
   homeRouter.get('/recruiting', homeController.recruiting);
   homeRouter.get('/software', homeController.software);
+  homeRouter.get('/contact', homeController.contact);
 
   app.use('/', homeRouter);
 };
