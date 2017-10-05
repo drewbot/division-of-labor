@@ -77,10 +77,10 @@ p, li, a, span, button, input, textarea, figcaption, div, section {
     font-size: 1.2rem;
     line-height: 2rem;
   }
-  @media #{$breakpoint-md-up} {
-    font-size: 1.4rem;
-    line-height: 2.3rem;
-  }
+  // @media #{$breakpoint-md-up} {
+  //   font-size: 1.4rem;
+  //   line-height: 2.3rem;
+  // }
 }
 
 a {
