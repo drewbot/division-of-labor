@@ -35,8 +35,8 @@ Sass changes will automatically be preprocessed by `npm start`. The browser must
 
 ### Styling
 
-Grid system provided by [http://sassflexboxgrid.com/](Sass Flexbox Grid) via classes, Sass variables, and Sass mixins.
+Grid system provided by [Sass Flexbox Grid](http://sassflexboxgrid.com/) via classes, Sass variables, and Sass mixins.
 
 Mobile-first philosophy is applied.
 Try to use only min-width media queries.
-media range Sass variables are provided by [http://sassflexboxgrid.com/views/variables](Sass Flexbox Grid = variables).
+media range Sass variables are provided by [Sass Flexbox Grid - variables](http://sassflexboxgrid.com/views/variables).
