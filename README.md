@@ -32,3 +32,11 @@ npm run watch
 `npm start` will run `nodemon app.js` and update the server with every change including public JS changes.
 
 Sass changes will automatically be preprocessed by `npm start`. The browser must be refreshed manually.
+
+### Styling
+
+Grid system provided by [http://sassflexboxgrid.com/](Sass Flexbox Grid) via classes, Sass variables, and Sass mixins.
+
+Mobile-first philosophy is applied.
+Try to use only min-width media queries.
+media range Sass variables are provided by [http://sassflexboxgrid.com/views/variables](Sass Flexbox Grid = variables).
