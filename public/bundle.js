@@ -52,8 +52,27 @@
 	
 	(function () {
 	
-	  (0, _scriptsShowNavJs.showNav)();
-	  (0, _scriptsActiveNavJs.activeNav)();
+	    var owner = 'Division of Labor';
+	    var githubUrl = '';
+	    var currentYear = new Date().getFullYear();
+	    var $copyrightInfo = document.getElementById('copyrightInfo');
+	
+	    function isTouchDevice() {
+	        return !!('ontouchstart' in window) || !!('msmaxtouchpoints' in window.navigator);
+	    }
+	
+	    function getCopyright() {
+	        return '&copy; ' + currentYear + ' ' + owner + '. All Rights Reserved.';
+	    }
+	
+	    function getOwnerContent() {
+	        return 'Made by <a href="' + githubUrl + '">' + owner + '</a>';
+	    }
+	
+	    $copyrightInfo.innerHTML = getCopyright();
+	
+	    (0, _scriptsShowNavJs.showNav)();
+	    (0, _scriptsActiveNavJs.activeNav)();
 	})();
 
 /***/ }),
@@ -86,31 +105,31 @@
 	'use strict';
 	
 	Object.defineProperty(exports, '__esModule', {
-	  value: true
+	    value: true
 	});
 	var activeNav = function activeNav() {
-	  var currentPath = window.location.pathname.replace(/^\/([^\/]*).*$/, '$1') || 'home';
-	  console.log(currentPath);
+	    var currentPath = window.location.pathname.replace(/^\/([^\/]*).*$/, '$1') || 'home';
 	
-	  var $navLinks = document.getElementsByClassName('nav-link');
-	  var $activeLink = document.getElementById(currentPath + 'NavLink');
+	    var $navLinks = document.getElementsByClassName('nav-link');
+	    var $activeLink = document.getElementById(currentPath + 'NavLink');
 	
-	  [].forEach.call($navLinks, function ($elem) {
-	    $elem.classList.remove('active');
-	    $elem.addEventListener('click', function (e) {
-	      [].forEach.call($navLinks, function ($elem) {
+	    [].forEach.call($navLinks, function ($elem) {
 	        $elem.classList.remove('active');
-	      });
-	      e.currentTarget.className += ' active';
+	        $elem.addEventListener('click', function (e) {
+	            [].forEach.call($navLinks, function ($elem) {
+	                $elem.classList.remove('active');
+	            });
+	            e.currentTarget.className += ' active';
+	        });
 	    });
-	  });
 	
-	  $activeLink.className += ' active';
+	    $activeLink.className += ' active';
 	};
 	
 	exports.activeNav = activeNav;
+	// Version of markup that goes with active nav component
 	// <nav>
-	//   <ul>
+	//   <ul id="navList">
 	//     <li class="nav-link" id="homeNavLink"><a href="/">Home</a></li>
 	//     <li class="nav-link" id="trainingNavLink"><a href="/training">Training</a></li>
 	//     <li class="nav-link" id="recruitingNavLink"><a href="/recruiting">Recruiting</a></li>
